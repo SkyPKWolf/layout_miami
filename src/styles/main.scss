@@ -2,6 +2,23 @@
 @import "fonts";
 @import "typography";
 
+@import "./reset.scss";
+@import "./blocks/header.scss";
+@import "./blocks/content.scss";
+@import "./blocks/description.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/client.scss";
+@import "./blocks/testimonials.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/form.scss";
+@import "./blocks/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: $c-gray;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
 }

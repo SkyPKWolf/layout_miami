@@ -1,1 +1,7 @@
 $c-gray: #eee;
+$break-point-for-table: 768px;
+$width-client: 240px;
+$main-padding: 120px;
+$gap-between-client: 48px;
+$min-width-for-client:
+  $width-client * 3 + $main-padding * 2 + $gap-between-client * 2;
