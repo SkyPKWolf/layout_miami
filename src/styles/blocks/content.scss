@@ -4,7 +4,10 @@
   @media (max-width: $break-point-for-table) {
     padding: 60px $second-padding;
   }
-
+  &__wrapper {
+    max-width: $max-width-content;
+    margin: 0 auto;
+  }
   &__description {
     margin-top: 44px;
 

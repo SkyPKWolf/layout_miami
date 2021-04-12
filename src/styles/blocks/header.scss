@@ -1,11 +1,16 @@
 .header {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
   padding: 0 $main-padding;
   color: #fff;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: $max-width-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   background-image: url(./../images/header.png);
   background-size: cover;
