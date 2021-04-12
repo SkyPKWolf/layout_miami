@@ -60,6 +60,7 @@
   &__name {
     font-weight: bold;
     color: $main-color;
+    text-decoration: none;
   }
 
   &__photo {
@@ -86,11 +87,11 @@
     @media (max-width: $break-point-for-table) {
       width: 100%;
     }
-    transition: 0.3s linear;
-    transition-property: color, background, box-shadow;
+    transition: 0.2s linear;
+    transition-property: color, background-color, box-shadow;
     &:hover {
       color: #fff;
-      background: $main-color;
+      background-color: $main-color;
       box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
     }
     &:active {

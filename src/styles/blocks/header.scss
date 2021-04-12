@@ -72,6 +72,8 @@
     background-image: url(./../images/Icon-Phone-call.svg);
     @include square-container (24px);
 
+    color: #fff;
+    text-decoration: none;
     align-items: center;
     line-height: 16px;
     font-size: 12px;
@@ -90,7 +92,7 @@
       content: "+1 234 555-55-55";
       opacity: 0;
       pointer-events: none;
-      transition: opacity 1s linear;
+      transition: opacity 0.3s linear;
     }
 
     &:hover::before {

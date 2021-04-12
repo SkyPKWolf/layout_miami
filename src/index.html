@@ -19,9 +19,7 @@
             >
           </a>
         </span>
-        <span class="header__phone">
-          <a href="tel: +12345555555"></a>
-        </span>
+        <a href="tel: +12345555555" class="header__phone"></a>
       </div>
       <h1 class="header__title">Miami
         <br> Condo Kings
@@ -100,7 +98,12 @@
           >
         </article>
         <div class="gallery__discription">
-          <span class="gallery__name">Marina Palms</span> / North Miami Beach, FL 33162
+          <a
+            href ="https://www.google.com/maps/place/%D0%9D%D0%BE%D1%80%D1%82+%D0%9C%D0%B0%D1%8F%D0%BC%D0%B8+%D0%91%D0%B8%D1%87,+%D0%A4%D0%BB%D0%BE%D1%80%D0%B8%D0%B4%D0%B0+33162,+%D0%A1%D0%A8%D0%90/@25.9289665,-80.1973892,14z/data=!3m1!4b1!4m5!3m4!1s0x88d9addb1b652001:0x525bd42381a2a4cf!8m2!3d25.9260794!4d-80.1819268"
+            class="gallery__name"
+          >Marina Palms
+          </a>
+          / North Miami Beach, FL 33162
         </div>
         <article class="gallery__wrapper gallery__wrapper--proportion-1_1">
           <img
@@ -115,7 +118,13 @@
           >
         </article>
         <div class="gallery__discription">
-          <span class="gallery__name">Edition Residens</span> / Miami Beach, FL 33139
+          <a
+            href ="https://www.google.com/maps/place/%D0%9C%D0%B0%D0%B9%D0%B0%D0%BC%D0%B8-%D0%91%D0%B8%D1%87,+%D0%A4%D0%BB%D0%BE%D1%80%D0%B8%D0%B4%D0%B0+33139,+%D0%A1%D0%A8%D0%90/@25.7820171,-80.1904184,13z/data=!3m1!4b1!4m5!3m4!1s0x88d9b4661cbb1ae5:0x557bd4f5339da98e!8m2!3d25.783312!4d-80.1484407"
+            class="gallery__name"
+          >
+            Edition Residens
+          </a>
+          / Miami Beach, FL 33139
         </div>
         <article class="gallery__wrapper gallery__wrapper--proportion-1_2">
           <img
@@ -130,7 +139,13 @@
           >
         </article>
         <div class="gallery__discription">
-          <span class="gallery__name">Faena House</span> / Miami Beach, FL 33140
+          <a
+            href ="https://www.google.com/maps/place/%D0%9C%D0%B0%D0%B9%D0%B0%D0%BC%D0%B8-%D0%91%D0%B8%D1%87,+%D0%A4%D0%BB%D0%BE%D1%80%D0%B8%D0%B4%D0%B0+33140,+%D0%A1%D0%A8%D0%90/@25.823236,-80.1828289,13z/data=!3m1!4b1!4m5!3m4!1s0x88d9b36dc0de02e1:0x57754e79a3d46a91!8m2!3d25.8176795!4d-80.1372757"
+            class="gallery__name"
+          >
+            Faena House
+          </a>
+          / Miami Beach, FL 33140
         </div>
         <a href="#" class="gallery__button">
           View all
@@ -192,14 +207,17 @@
             </div>
             <div class="contact__address-wrapper">
               <span class="contact__subtitle">Address</span>
-              <span class="contact__content">400 first ave. n. <br> suite 700 <br>
-                Minneapolis, MN  <br> 55401
-              </span>
+              <a
+                href="https://www.google.com/maps/place/The+Carlyle,+Minneapolis,+MN+55401,+%D0%A1%D0%A8%D0%90/@44.9815655,-93.2655463,17z/data=!3m1!4b1!4m5!3m4!1s0x52b33282cc89c833:0x29f5d43f03694793!8m2!3d44.9815655!4d-93.2633576"
+                class="contact__content">
+                  400 first ave. n. <br> suite 700 <br>
+                  Minneapolis, MN  <br> 55401
+              </a>
             </div>
           </div>
           <form
             action="#"
-            method="POST"
+            method="GET"
             class="contact__form form"
           >
             <label for="name">
@@ -224,6 +242,7 @@
               id="message"
               placeholder="Message"
               rows="7"
+
            ></textarea>
             <button type="submit" class="form__button">Consultation</button>
           </form>
