@@ -46,7 +46,7 @@
 
     &--active {
       background-image: url(./../images/Vector.svg);
-      transform: rotate(360deg);
+      transform: rotateX(180deg);
 
       &:hover {
         background-image: url(./../images/Vector.svg);
