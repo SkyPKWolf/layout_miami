@@ -11,13 +11,13 @@
     border: 2px solid #fff;
     background: #f7f8ff;
     border-radius: 8px;
+    transition: 0.3s border-color linear;
 
     &:hover {
       border-color: #ccd0e0;
     }
-
     &:focus {
-      border-color: #0075ff;
+      border-color: $main-color;
     }
   }
 
@@ -27,10 +27,11 @@
     color: #fff;
     font-weight: bold;
 
-    background: #0075ff;
+    background: $main-color;
     box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
     border-radius: 8px;
-
+    transition: 0.3s linear;
+    transition-property: background, box-shadow;
     &:hover {
       background: #005ecc;
       box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);

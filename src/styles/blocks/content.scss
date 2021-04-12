@@ -1,8 +1,8 @@
 .content {
-  padding: 60px 120px;
+  padding: 60px $main-padding;
 
   @media (max-width: $break-point-for-table) {
-    padding: 60px 20px;
+    padding: 60px $second-padding;
   }
 
   &__description {
