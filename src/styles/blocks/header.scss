@@ -1,0 +1,116 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 120px;
+  color: #fff;
+
+  background-image: url(./../images/header.png);
+  background-size: cover;
+  background-position: top center;
+
+  @media (max-width: $break-point-for-table) {
+    padding: 0 23px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 0;
+    gap: 60px;
+
+  }
+  &__menu {
+    background-image: url(./../images/Icon-Burger-menu.svg);
+    background-size: cover;
+    @include square-container (24px);
+    @media (max-width: $break-point-for-table) {
+      @include square-container (18px);
+
+    }
+    &:hover {
+      background-image: url(./../images/Icon-Burger-menu-hover.svg);
+      cursor: pointer;
+    }
+  }
+
+  &__logo {
+    object-fit: fill;
+    @media (max-width: $break-point-for-table) {
+      height: 48px;
+      width: 80px;
+    }
+  }
+
+  &__phone {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-image: url(./../images/Icon-Phone-call.svg);
+    @include square-container (24px);
+
+    align-items: center;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    @media (max-width: $break-point-for-table) {
+      @include square-container (18px);
+    }
+
+    &::before {
+      position: absolute;
+      left: -130px;
+      top: 3px;
+      content: "+1 234 555-55-55";
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 1s linear;
+    }
+
+    &:hover::before {
+      opacity: 1;
+
+      @media  (max-width: 460px) {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__title {
+
+    padding-bottom: 80px;
+    font-weight: bold;
+    font-size: 80px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      margin-bottom: 24px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+
+    @media (max-width: $break-point-for-table) {
+      font-size: 46px;
+      line-height: 40px;
+    }
+
+  }
+
+  &__nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

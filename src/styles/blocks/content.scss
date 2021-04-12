@@ -1,0 +1,36 @@
+.content {
+  padding: 60px 120px;
+
+  @media (max-width: $break-point-for-table) {
+    padding: 60px 20px;
+  }
+
+  &__description {
+    margin-top: 44px;
+
+    @media (max-width: $break-point-for-table) {
+      margin-top: 4px;
+    }
+  }
+
+  &__gallery {
+    margin-top: 152px;
+    @media (max-width: $break-point-for-table) {
+      margin-top: 64px;
+    }
+  }
+
+  &__testimonials {
+    margin-top: 152px;
+    @media (max-width: $break-point-for-table) {
+      margin-top: 64px;
+    }
+  }
+
+  &__contact {
+    margin-top: 152px;
+    @media (max-width: $break-point-for-table) {
+      margin-top: 64px;
+    }
+  }
+}
