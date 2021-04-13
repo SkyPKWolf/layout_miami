@@ -68,7 +68,11 @@
     height: 256px;
     object-fit: cover;
     border-radius: 8px;
-
+    transition: 0.3s border-color linear;
+    border: 2px solid transparent;
+    &:hover {
+      border-color: $main-color;
+    }
     @media (max-width: $break-point-for-table) {
       height: 131px;
     }
