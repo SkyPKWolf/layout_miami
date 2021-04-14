@@ -24,10 +24,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 24px 0;
     gap: 60px;
 
+    &--active {
+      transition-delay: 0.25s;
+      position: relative;
+      z-index: 2;
+      background-color: $main-color;
+    }
   }
   &__menu {
     position: relative;
