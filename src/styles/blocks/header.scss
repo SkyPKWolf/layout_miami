@@ -1,0 +1,139 @@
+.header {
+  position: relative;
+  padding: 0 $main-padding;
+  color: #fff;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: $max-width-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  background-image: url(./../images/header.png);
+  background-size: cover;
+  background-position: top center;
+
+  @media (max-width: $break-point-for-table) {
+    padding: 0 23px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    gap: 60px;
+
+    &--active {
+      transition-delay: 0.25s;
+      position: relative;
+      z-index: 2;
+      background-color: $main-color;
+    }
+  }
+  &__menu {
+    position: relative;
+    background-image: url(./../images/Icon-Burger-menu.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    outline: none;
+    z-index: 2;
+    transition: 0.3s transform linear;
+    @include square-container (24px);
+    @media (max-width: $break-point-for-table) {
+      @include square-container (18px);
+
+    }
+
+    &:hover {
+      background-image: url(./../images/Icon-Burger-menu-hover.svg);
+      cursor: pointer;
+    }
+
+    &--active {
+      background-image: url(./../images/Vector.svg);
+      transform: rotateX(180deg);
+
+      &:hover {
+        background-image: url(./../images/Vector.svg);
+
+      }
+    }
+  }
+
+  &__logo {
+    position: relative;
+    object-fit: fill;
+    @media (max-width: $break-point-for-table) {
+      height: 48px;
+      width: 80px;
+    }
+    z-index: 2;
+  }
+
+  &__phone {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-image: url(./../images/Icon-Phone-call.svg);
+    @include square-container (24px);
+
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    @media (max-width: $break-point-for-table) {
+      @include square-container (18px);
+    }
+
+    &::before {
+      position: absolute;
+      left: -130px;
+      top: 3px;
+      content: "+1 234 555-55-55";
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s linear;
+    }
+
+    &:hover::before {
+      opacity: 1;
+
+      @media  (max-width: 460px) {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__title {
+
+    padding-bottom: 80px;
+    font-weight: bold;
+    font-size: 80px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      margin-bottom: 24px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+
+    @media (max-width: $break-point-for-table) {
+      font-size: 46px;
+      line-height: 40px;
+    }
+
+  }
+}
